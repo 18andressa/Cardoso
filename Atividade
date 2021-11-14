@@ -1,0 +1,48 @@
+Atividade TP.
+Criar um repositório no GitHub , criar um arquivo e fazer envio do código fonte do exercício abaixo.
+
+1-Desenvolva uma aplicação em C# chamada compra certa, que leia o nome do produto, o valor do produto e a quantidade. Aplicação deve efetuar valor Total da compra e parcelar em 3 vezes. 
+
+Se o valor da compra for maior que R$ 300,00, aplicação deve exibir “ Bom cliente”, do contrário “ Cliente mediano”. 
+
+No final do código, fazer um comentário, inserindo seu nome.
+
+
+string produto;
+            double valor, total, a;
+            int quantidade;
+
+            Console.WriteLine(" Digite o nome do Produto: ");
+            produto = Console.ReadLine();
+
+            Console.WriteLine(" Digite o valor: ");
+            valor = double.Parse(Console.ReadLine());
+
+            Console.WriteLine(" Digite a quantidade: ");
+            quantidade = int.Parse(Console.ReadLine());
+            
+
+            
+            total = quantidade * valor;
+            a = total/3;
+
+            if (valor < 300)
+            {
+                Console.WriteLine("Cliente mediano");
+                Console.WriteLine("valor da parcela: " + a);
+                Console.WriteLine("Valor da compra " + total);
+            }
+            else (valor > 300)
+            {
+                Console.WriteLine(" Bom cliente ");
+                Console.WriteLine(" Valor de parcela: " + a);
+                Console.WriteLine(" Valor da compra " + total);
+            }
+
+
+
+
+
+            Console.ReadLine();
+            
+            /* Andressa Cradoso */
